@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/* CSS Document */
+*{margin: 0%;
+    padding: 0%;
+    font-size: lem;
+    font-weight: normal;
+    color: #666;}
+body {background-color: #bb8655;}
+div#container{width: 1170px; margin: 0% auto;}
+header {
+    background-color: #000000;
+    text-align: center;
+    padding: 45px 0px;}
+
+header h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3em;
+    color: #c4e30d;
+    text-shadow: 2px 2px #000;
+    margin: 0;}
+section#main{padding: 100px 40px 200px 40px;
+    background-color: white;}
+
+/* article{} */
+
+
+article{margin-bottom: 50px;}
+
+/* asegura que el renglon este alineado con la imagen*/
+article.platilos{clear: both;}
+
+/* ---------------este renglon cambia la flecha a selecion de mano---- */
+
+article.platilos img, article.platilos h1, article.platilos ul{cursor: pointer;}
+img.portadaIzq{float: left; 
+                margin-right: 30px;
+                margin-bottom: 50px;}
+
+img.portadaDer{float: right;}
+h1.tituloArt{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-bottom: 30px ;
+            font-size: 2.3em;}
+
+ul.listaDeIngredientes{list-style: square;
+    list-style-position: inside;}
+h2.listaDeIngredientes{font-family: "Instruments Sans", sans-serif;
+                        font-size: 1.5em;
+                        margin-bottom: 30px;}
+ul.listaDeIngedientes li{font-family: "Instruments Sans", sans-serif;
+                        font-size: 1.5em;}
+ul.listaDeIngredientes p{margin-top: 300px;}
+
+
+div.cajaComplementos{background-color: #d9d9d9;
+                    clear: both;
+                    padding: 30px 220px 60px 60px;
+                    display: none;}
+
+h2.textoComplementario{font-family: "Instruments Sans", sans-serif;
+                        font-size: 1.5em ;
+                        margin-bottom: 30px;
+                        font-weight: 600;}
+                        
+article p{font-family: "Instruments Sans", sans-serif;
+                        font-size: 1em ;
+                        line-height: 30px;
+                        margin-bottom: 30px;
+                    }
+
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.receta {
+    margin-bottom: 60px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 40px;
+}
+
+.receta h2 {
+    font-size: 2em;
+    margin-top: 0;
+    color: #222;
+    border-left: 6px solid #c4e30d;
+    padding-left: 10px;
+    display: inline-block; /* Para que el borde izquierdo no ocupe toda la fila */
+    text-align: left;       /* Alinea el texto dentro del h2 a la izquierda */
+}
+
+.receta img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+.contenido {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 20px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+footer {
+  background-color: #d90000; /* rojo intenso */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  margin: 40px auto; /* centra horizontalmente */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* sombra opcional para realce */
+  font-family: Arial, sans-serif;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/*--------estilo de menu de hamburguesa-------*/
+.btnocultar{background-color: black;
+    color: white;
+    border-width: 0px;
+    font-size: 2.5em;
+    padding: 5px 10px;
+    display: none;
+
+}
+
+.menu_ocultar {background-color: #d6d6d6;
+            padding: 20PX 0PX;}
+.menu_ocultar ul{list-style: none;
+        margin: 10px;
+        display:flex ;
+        gap: 40px;
+    
+}
+
+.menu_ocultar ul a{text-decoration: none;
+                    font-size: 2.3em;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    color: coral;}
+
+/*-----estilo celular--------- */
+@media (max-width:1225px) {
+
+    .btnocultar{display: block;}
+    .menu_ocultar ul{flex-direction: column;
+                    display:none; 
+                    background-color: orange;
+                    padding: 20px;}
+
+    .menu_ocultar ul a{color: #d6d6d6;}
+    nav.menu_ocultar ul.show{
+        display: flex;
+    }
+    
+}
